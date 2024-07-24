@@ -1,0 +1,148 @@
+/* styles.css */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    /* Adjust the size of the logo as needed */
+    margin-bottom: 20px;
+}
+
+
+.logoutBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.addTaskBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    /* Customize button background color */
+    color: white;
+    /* Customize button text color */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.addTaskBtn:hover {
+    background-color: #735DA5;
+    /* Change color on hover */
+}
+
+.addTaskBtn svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeTaskBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    /* Customize button background color */
+    color: white;
+    /* Customize button text color */
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.closeTaskBtn:hover {
+    background-color: #735DA5;
+    /* Change color on hover */
+}
+
+
+.taskItems {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 1%;
+    flex-wrap: wrap;
+}
+
+.modal .logo1 {
+    width: 200px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.filter-buttons button.active {
+    color: #007bff;
+    /* Change to your desired active color */
+    border-bottom: 2px solid #007bff;
+    /* Change to your desired active color */
+}
+
+.filter-buttons button:hover {
+    color: #007bff;
+    /* Change to your desired hover color */
+}
